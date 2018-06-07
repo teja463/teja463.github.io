@@ -1,4 +1,9 @@
-# Vim basic shortcuts
+---
+layout: page
+title: Vim Basic shortcuts
+description: Every developer must know
+---
+
 
 | Command | Description |
 | ------ | ------ |
