@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { FirebaseService } from '../firebase.service';
 
 @Component({
   selector: 'app-home',
@@ -7,9 +8,13 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HomeComponent implements OnInit {
 
-  constructor() { }
+  homeData: any = {};
+  constructor(private firebaseSvc: FirebaseService) { }
 
   ngOnInit() {
+    this.firebaseSvc.getHomeData().subscribe(next => {
+      this.homeData = next;
+    });
   }
 
 }

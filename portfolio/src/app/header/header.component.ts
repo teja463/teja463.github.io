@@ -8,13 +8,16 @@ import { FirebaseService } from '../firebase.service';
 })
 export class HeaderComponent implements OnInit {
 
-  title: string="Brahma Teja Ponnuru";
-  headerLinks: any = [];
+  
+  navbar: any = {};
 
   constructor(private firebaseSvc: FirebaseService) { }
 
   ngOnInit() {
-    this.headerLinks = this.firebaseSvc.getHeaders();
+    this.firebaseSvc.getHeaders().subscribe(next => {
+      this.navbar = next;
+      console.log(next);
+    });
   }
 
 }

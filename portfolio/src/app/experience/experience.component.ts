@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { FirebaseService } from '../firebase.service';
 
 @Component({
   selector: 'app-experience',
@@ -7,9 +8,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ExperienceComponent implements OnInit {
 
-  constructor() { }
+  exp: any = {};
+
+  constructor(private firebaseSvc: FirebaseService) { }
 
   ngOnInit() {
+    this.firebaseSvc.getExp().subscribe(next => {
+      this.exp =next;
+    });
   }
 
 }
