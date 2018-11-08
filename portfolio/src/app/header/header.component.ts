@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { FirebaseService } from '../firebase.service';
 
 @Component({
   selector: 'app-header',
@@ -8,27 +9,12 @@ import { Component, OnInit } from '@angular/core';
 export class HeaderComponent implements OnInit {
 
   title: string="Brahma Teja Ponnuru";
-  headerLinks = [
-    {
-      "link": "skills",
-      "title": "Skills"
-    },
-    {
-      "link": "experience",
-      "title": "Experience"
-    },
-    {
-      "link": "resume",
-      "title": "Resume"
-    },
-    {
-      "link": "contact",
-      "title": "Contact"
-    }
-  ]
-  constructor() { }
+  headerLinks: any = [];
+
+  constructor(private firebaseSvc: FirebaseService) { }
 
   ngOnInit() {
+    this.headerLinks = this.firebaseSvc.getHeaders();
   }
 
 }

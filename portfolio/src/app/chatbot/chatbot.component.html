@@ -1,0 +1,17 @@
+
+<div class="bottom-right">
+    <button class="btn btn-primary" (click)="toggleChatbot();">Click here to Chat</button>
+    <div class="mbed-responsive embed-responsive-4by3" [ngClass]="{'show': showChatbot, 'hide': !showChatbot}">
+
+        <iframe
+          id="chatbotFrame"
+          class="b_frame"
+          width="350"
+          height="430"
+          allow="microphone;"
+          src="https://console.dialogflow.com/api-client/demo/embedded/8c71d3b3-fc27-486b-a29b-cfa4f8a028ee"
+        ></iframe>
+      </div>
+      
+</div>
+
