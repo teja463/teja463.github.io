@@ -1,8 +1,4 @@
 
-@font-face{
-    font-family: myFirstFont;
-    src: url(./assets/fonts/fontawesome-webfont.woff2);
-}
 
 .main-block {
     min-height: 90vh;
@@ -66,4 +62,11 @@
 
 .card-expertise{
     margin-bottom: 1.5em;
+}
+
+.btn-group-lg>.btn, .btn-lg{
+    padding: .5rem 1rem;
+    font-size: 1.3rem;
+    line-height: 2.7;
+    border-radius: 3.5rem;
 }
