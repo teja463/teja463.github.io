@@ -16,7 +16,6 @@ export class HeaderComponent implements OnInit {
   ngOnInit() {
     this.firebaseSvc.getHeaders().subscribe(next => {
       this.navbar = next;
-      console.log(next);
     });
   }
 
