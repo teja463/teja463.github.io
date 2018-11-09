@@ -1,8 +1,8 @@
 
 /* body{
-    background-image: url(http://demo.bestdnnskins.com/portals/6/innerpage/banner3_04.jpg);
+    background-image: url(https://images.pexels.com/photos/399161/pexels-photo-399161.jpeg);
     background-size: cover;
-}
+} */
 
 .page-overlay{
     position: absolute;
@@ -11,12 +11,14 @@
     bottom: 0;
     left: 0;
     z-index: 0;
-    background-color: #000;
+    /* background-color: #343a40; */
+    background-color: #f8f9fa;
     opacity: 0.3;
-} */
+}
 .main-block {
-    min-height: 90vh;
-    color: #007bff;
+    min-height: calc(100vh - 60px);
+    /* color: #007bff; */
+    color: #343a40;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -25,7 +27,7 @@
 }
 
 .fullview-block {
-    min-height: 90vh;
+    min-height: calc(100vh - 60px);
     /* background: #e3e7eb; */
     padding-top: 7.5rem;
 }
@@ -39,10 +41,11 @@
 }
 .footer{
     /* position: absolute; */
-    margin-top: 10px;
+    /* margin-top: 10px; */
     bottom: 0;
-    width: 100%;
-    max-height: 8vh;
+    width: 95%;
+    height: 60px;
+    /* max-height: 8vh; */
     line-height: 60px;
     background-color: #f5f5f5;
 }
@@ -52,10 +55,10 @@
     justify-content: center;
 }
 .footer-icons{
-    padding: 10px;
+    /* padding: 0px 10px 0px 10px; */
     text-align: center;
-    font-size: 2.2em;
-    
+    font-size: 1.5em;
+    color:  #343a40;
 }
 
 .navbar.navbar-dark .breadcrumb .nav-item .nav-link, .navbar.navbar-dark .navbar-nav .nav-item .nav-link{
@@ -108,3 +111,11 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1e5799', end
     display: block;
 }
 
+
+.bg-primary{
+    background-color: #343a40 !important;
+}
+
+.text-uppercase{
+    font-weight: 500;
+}
