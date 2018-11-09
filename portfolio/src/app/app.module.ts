@@ -14,7 +14,6 @@ import { ChatbotComponent } from './chatbot/chatbot.component';
 import { FirebaseService } from './firebase.service';
 import { HttpClientModule } from '@angular/common/http';
 
-
 @NgModule({
   declarations: [
     AppComponent,
