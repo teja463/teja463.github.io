@@ -1,0 +1,207 @@
+:root{
+    --bg: #0b1529;
+    --bgSoft: #1f3050;
+    --text: #dee4eb;
+    --textSoft: #cdb2d9;
+}
+
+body.light{
+    --bg: #dee4eb;
+    --text: #0b1529;
+}
+
+
+
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: var(--bg);
+    color: var(--text);
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+a{
+    color: inherit;
+    text-decoration: none;
+}
+
+.container{
+    max-width: 1366px;
+    padding-left: 50px;
+    padding-right: 50px;
+    min-height: 100vh;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 60px;
+    position: sticky;
+    top: 0;
+    background-color: var(--bg);
+}
+
+.logo{
+    text-transform: uppercase;
+    font-size: 24px;
+    letter-spacing: 2px;
+}
+
+.links{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    font-size: 20px;
+}
+
+.searchButton{
+    padding: 5px 16px;
+    border-radius: 8px;
+    background-color: var(--bgSoft);
+    color: var(--textSoft);
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.listItem{
+    display: flex;
+    gap: 50px;
+    align-items: center;
+    margin-bottom: 50px;
+}
+.listItemTexts{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.listItemImage{
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+}
+
+.listItemDetail{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.listItemAvatar{
+    width: 24px;
+    height: 24px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.listItemCategories{
+    display: flex;
+    gap: 10px;
+}
+
+.listItemCategory{
+    background-color: var(--bgSoft);
+    color: var(--textSoft);
+    padding: 4px;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+/* SINGLE START*/
+
+.singleHead{
+    display: flex;
+    gap: 50px;
+    align-items: center;
+    justify-content: space-between;
+}
+.singleContent{
+    line-height: 32px;
+}
+
+pre{
+    padding: 16px;
+}
+
+.singleHeadTitle{
+    font-size: 32px;
+    margin-bottom: 8px;
+}
+
+.singleHeadDetail{
+    margin-top: 8px;
+    display: flex;
+    gap: 10px;
+    margin-bottom: 16px;
+    align-items: center;
+}
+
+.listItemAvatar{
+    width: 32px;
+    height: 32px;
+}
+
+/* SINGLE END*/
+
+.themeToggle{
+    width: 50px;
+    height: 25px;
+    cursor: pointer;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    background-color: var(--bgSoft);
+    border: 1px solid var(--textSoft);
+    padding: 5px;
+    position: relative;
+}
+
+.ball{
+    width: 24px;
+    height: 24px;
+    position: absolute;
+    background-color: var(--textSoft);
+    border: 1px solid var(--bgSoft);
+    border-radius: 50px;
+    left: 0;
+}
+
+.light .ball{
+    left: unset;
+    right: 0;
+}
+
+.pagination{
+    display: flex;
+    list-style: none;
+    gap: 10px;
+}
+
+.page-item{
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 16px;
+    border: 1px solid gray;
+    border-radius: 8px;
+}
+
+.page-item.active{
+    background-color: var(--text);
+    color: var(--bg);
+}
+
+.page-item.disabled{
+    cursor: not-allowed;
+    background-color: #313845;
+}

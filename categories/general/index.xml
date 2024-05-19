@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>General on Teja Blog</title>
+    <link>https://teja463.github.io/categories/general/</link>
+    <description>Recent content in General on Teja Blog</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 19 May 2024 15:31:05 +0530</lastBuildDate>
+    <atom:link href="https://teja463.github.io/categories/general/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Java 22 Features</title>
+      <link>https://teja463.github.io/my-fifth-post/</link>
+      <pubDate>Sun, 19 May 2024 15:31:05 +0530</pubDate>
+      <guid>https://teja463.github.io/my-fifth-post/</guid>
+      <description>Java 22 Features Unamed variables Now with Java 22 we an crate unname varibles. Earlier versions of java has few rules for variables like it should start with a letter, numbers not allowed as vairable names etc. In java 22 you can use _ as a variable name, but you can&amp;rsquo;t do any operations on it Check example below Student _ = new Student(); But you cant call any methods on that student object, for e.</description>
+    </item>
+    <item>
+      <title>My First Post</title>
+      <link>https://teja463.github.io/my-first-post/</link>
+      <pubDate>Sun, 19 May 2024 15:31:05 +0530</pubDate>
+      <guid>https://teja463.github.io/my-first-post/</guid>
+      <description>Sample First Post </description>
+    </item>
+    <item>
+      <title>My Fourth Post</title>
+      <link>https://teja463.github.io/my-fourth-post/</link>
+      <pubDate>Sun, 19 May 2024 15:31:05 +0530</pubDate>
+      <guid>https://teja463.github.io/my-fourth-post/</guid>
+      <description>Sample Fourth Post </description>
+    </item>
+    <item>
+      <title>My Second Post</title>
+      <link>https://teja463.github.io/my-second-post/</link>
+      <pubDate>Sun, 19 May 2024 15:31:05 +0530</pubDate>
+      <guid>https://teja463.github.io/my-second-post/</guid>
+      <description>Sample Second Post </description>
+    </item>
+  </channel>
+</rss>
