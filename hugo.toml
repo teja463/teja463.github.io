@@ -1,0 +1,13 @@
+baseURL = 'https://teja463.github.io/'
+languageCode = 'en-us'
+title = 'Teja Blog'
+
+paginate = 5
+
+[params]
+    myDateFormat = "Jan 2, 2006"
+    description = "Teja blog description"
+
+[taxonomies]
+    category = "categories"
+    author = "authors"
