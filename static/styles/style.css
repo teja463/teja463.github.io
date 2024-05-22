@@ -146,32 +146,7 @@ pre{
 /* SINGLE END*/
 
 .themeToggle{
-    width: 50px;
-    height: 25px;
     cursor: pointer;
-    border-radius: 50px;
-    display: flex;
-    align-items: center;
-    gap: 5px;
-    background-color: var(--bgSoft);
-    border: 1px solid var(--textSoft);
-    padding: 5px;
-    position: relative;
-}
-
-.ball{
-    width: 24px;
-    height: 24px;
-    position: absolute;
-    background-color: var(--textSoft);
-    border: 1px solid var(--bgSoft);
-    border-radius: 50px;
-    left: 0;
-}
-
-.light .ball{
-    left: unset;
-    right: 0;
 }
 
 .pagination{
@@ -205,6 +180,18 @@ pre{
     overflow: auto;
 }
 
+.moon{
+    display: none;
+}
+
+.light{
+    .moon{
+        display: block;
+    }
+    .sun{
+        display: none;
+    }
+}
 @media (max-width: 768px) {
     /* .navbar{
         padding: 8px 0;
