@@ -10,8 +10,6 @@ body.light{
     --text: #0b1529;
 }
 
-
-
 *{
     margin: 0;
     box-sizing: border-box;
@@ -33,42 +31,39 @@ a{
     padding-right: 50px;
     min-height: 100vh;
     margin: auto;
-    display: flex;
-    justify-content: space-between;
-    flex-direction: column;
+    /* display: flex; */
+    /* justify-content: space-between; */
+    /* flex-direction: column; */
 }
 
 .navbar{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    height: 60px;
+    min-height: 60px;
     position: sticky;
     top: 0;
     background-color: var(--bg);
+    flex-wrap: wrap;
+    margin-bottom: 24px;
+    padding: 16px;
+    box-shadow: 0 0 10px 4px var(--bgSoft)
 }
 
 .logo{
     text-transform: uppercase;
-    font-size: 24px;
-    letter-spacing: 2px;
+    font-size: 28px;
+    letter-spacing: 5px;
 }
-
+.logoDesc{
+    margin-top: 8px;
+    font-size: 12px;
+}
 .links{
     display: flex;
     gap: 20px;
     align-items: center;
     font-size: 20px;
-}
-
-.searchButton{
-    padding: 5px 16px;
-    border-radius: 8px;
-    background-color: var(--bgSoft);
-    color: var(--textSoft);
-    display: flex;
-    align-items: center;
-    gap: 8px;
 }
 
 .listItem{
@@ -115,12 +110,12 @@ a{
 }
 
 /* SINGLE START*/
+.single{
+    padding-bottom: 32px;
+}
 
 .singleHead{
-    display: flex;
-    gap: 50px;
-    align-items: center;
-    justify-content: space-between;
+    margin-bottom: 32px;
 }
 .singleContent{
     line-height: 32px;
@@ -204,4 +199,22 @@ pre{
 .page-item.disabled{
     cursor: not-allowed;
     background-color: #313845;
+}
+
+pre{
+    overflow: auto;
+}
+
+@media (max-width: 768px) {
+    /* .navbar{
+        padding: 8px 0;
+    } */
+    .listItem{
+        flex-direction: column;
+        gap:10px;
+        align-items: flex-start;
+    }
+    .logoDesc{
+        display: none;
+    }
 }

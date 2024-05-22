@@ -9,39 +9,32 @@
     <lastBuildDate>Sun, 19 May 2024 15:31:05 +0530</lastBuildDate>
     <atom:link href="https://teja463.github.io/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Java 22 Features</title>
-      <link>https://teja463.github.io/my-fifth-post/</link>
+      <title>Indexes in database</title>
+      <link>https://teja463.github.io/database/database-indexes/</link>
       <pubDate>Sun, 19 May 2024 15:31:05 +0530</pubDate>
-      <guid>https://teja463.github.io/my-fifth-post/</guid>
+      <guid>https://teja463.github.io/database/database-indexes/</guid>
+      <description>Indexes in database Indexes help to retrieve the data faster. It is because database does not have to scan the whole database to retrieve the data, normally this searching is done linearly i.e row by row, so if you are retrieving a 100th record it has to read all the 99 rows before that If you create a index for the columns which you query frequently it will create a separate table for the key value pair where key is the column value and value is a pointer to that recrod Now database does not have to scan all the rows it can just read that pointer and go to that record Clustered Index A clustered index is an index that specifies the physical arrangement of a database&amp;rsquo;s table records.</description>
+    </item>
+    <item>
+      <title>Java 22 Features</title>
+      <link>https://teja463.github.io/java/java-22-features/</link>
+      <pubDate>Sun, 19 May 2024 15:31:05 +0530</pubDate>
+      <guid>https://teja463.github.io/java/java-22-features/</guid>
       <description>Java 22 Features Unamed variables Now with Java 22 we an crate unname varibles. Earlier versions of java has few rules for variables like it should start with a letter, numbers not allowed as vairable names etc. In java 22 you can use _ as a variable name, but you can&amp;rsquo;t do any operations on it Check example below Student _ = new Student(); But you cant call any methods on that student object, for e.</description>
     </item>
     <item>
-      <title>My First Post</title>
-      <link>https://teja463.github.io/my-first-post/</link>
+      <title>Regular Expressions in Python</title>
+      <link>https://teja463.github.io/python/regular-expressions-python/</link>
       <pubDate>Sun, 19 May 2024 15:31:05 +0530</pubDate>
-      <guid>https://teja463.github.io/my-first-post/</guid>
-      <description>Sample First Post </description>
+      <guid>https://teja463.github.io/python/regular-expressions-python/</guid>
+      <description>Regular Expressions in Python To use regular expressions in python you need to import re module Regular expressions are used for pattern matching Simple Match Searches for the given pattern in that string and return True or False If you want to ignore case you can use re.I # Simple matching string = input(&amp;#34;Enter a String: &amp;#34;) if (re.search(&amp;#39;Python&amp;#39;, string)): # search for python in string print (&amp;#34;Python satisfied&amp;#34;) else: print (&amp;#34;Python not satisfied&amp;#34;) if (re.</description>
     </item>
     <item>
-      <title>My Fourth Post</title>
-      <link>https://teja463.github.io/my-fourth-post/</link>
+      <title>Users And Permissions in Liferay</title>
+      <link>https://teja463.github.io/liferay/liferay/</link>
       <pubDate>Sun, 19 May 2024 15:31:05 +0530</pubDate>
-      <guid>https://teja463.github.io/my-fourth-post/</guid>
-      <description>Sample Fourth Post </description>
-    </item>
-    <item>
-      <title>My Second Post</title>
-      <link>https://teja463.github.io/my-second-post/</link>
-      <pubDate>Sun, 19 May 2024 15:31:05 +0530</pubDate>
-      <guid>https://teja463.github.io/my-second-post/</guid>
-      <description>Sample Second Post </description>
-    </item>
-    <item>
-      <title>My Third Post</title>
-      <link>https://teja463.github.io/my-third-post/</link>
-      <pubDate>Sun, 19 May 2024 15:31:05 +0530</pubDate>
-      <guid>https://teja463.github.io/my-third-post/</guid>
-      <description>Sample Third Post </description>
+      <guid>https://teja463.github.io/liferay/liferay/</guid>
+      <description>Users And Permissions Users Organizations are an entity in Liferay that can group users in a distributed hierarchy. Practically, this means that large organizations can empower and delegate Users to administer their Organizations. User Groups are another way to group Users to simplify administration and assigning Roles. User Groups are simple lists of Users that can have Roles assigned to them. Organizations After creating an Organization, assign a user to the Organization Owner Role.</description>
     </item>
   </channel>
 </rss>
