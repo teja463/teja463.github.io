@@ -8,8 +8,8 @@
     <link rel="stylesheet" href="/styles/style.css">
 </head>
 <body>
+    {{ partial "navbar" . }}
     <div class="container">
-        {{ partial "navbar" . }}
         {{ block "main" . }}{{ end }}
         {{/*  {{ partial "footer" . }}  */}}
     </div>
