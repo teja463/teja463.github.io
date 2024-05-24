@@ -1,12 +1,12 @@
 baseURL = 'https://teja463.github.io/'
 languageCode = 'en-us'
-title = 'Teja Blog'
+title = 'Teja Ponnuru'
 
 paginate = 5
 
 [params]
     myDateFormat = "Jan 2, 2006"
-    description = "Teja blog description"
+    description = "Brahma Teja Ponnuru"
 
 [taxonomies]
     category = "categories"

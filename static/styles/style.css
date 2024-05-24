@@ -215,3 +215,7 @@ pre{
         padding-right: 16px; 
     }
 }
+
+.categoryItem{
+    padding: 16px;
+}
