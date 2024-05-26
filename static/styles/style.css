@@ -1,13 +1,15 @@
 :root{
-    --bg: #0b1529;
-    --bgSoft: #1f3050;
-    --text: #dee4eb;
-    --textSoft: #cdb2d9;
+    --bg: #000000;
+    --bgSoft: #7856ff;
+    --text: #e7e9ea;
+    --textSoft: #ffffff;
+    --shade: rgba(255,255,255,0.3);
 }
 
 body.light{
-    --bg: #dee4eb;
-    --text: #0b1529;
+    --bg: #ffffff;
+    --text: #000000;
+    --shade: rgba(0,0,0,0.3)
 }
 
 *{
@@ -41,7 +43,7 @@ a{
     background-color: var(--bg);
     margin-bottom: 24px;
     padding: 10px;
-    box-shadow: 0 0 10px 4px var(--bgSoft);
+    box-shadow: 0 0 10px 4px var(--shade);
 }
 
 .navbarInner{
@@ -190,6 +192,16 @@ pre{
     display: none;
 }
 
+
+.categoryItem{
+    padding: 16px;
+}
+
+.tagIcon{
+    width: 24px;
+    height: 24px;
+}
+
 .light{
     .moon{
         display: block;
@@ -198,6 +210,7 @@ pre{
         display: none;
     }
 }
+
 @media (max-width: 768px) {
     .listItem{
         flex-direction: column;
@@ -209,13 +222,10 @@ pre{
     }
     .navbarInner{
         padding: 0;
+        justify-content: center;
     }
     .container{
         padding-left: 16px;
         padding-right: 16px; 
     }
-}
-
-.categoryItem{
-    padding: 16px;
 }
