@@ -1,0 +1,4 @@
+<img src="{{.Params.avatar}}" alt="avatar" class="listItemAvatar" />
+<span>{{ range (.GetTerms "authors") }}
+    <a href="{{.Permalink}}">{{.Name}}</a>
+    {{ end }}</span>

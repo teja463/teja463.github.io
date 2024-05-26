@@ -5,15 +5,8 @@
       <div class="singleHeadTitle">{{.Title}}</div>
       <div class="singleHeadDesc">{{.Params.description}}</div>
       <div class="singleHeadDetail">
-        <img src="{{.Params.avatar}}" alt="avatar" class="listItemAvatar" />
-        <span
-          >{{ range (.GetTerms "authors") }}
-          <a href="{{.Permalink}}">{{.Name}}</a>
-          {{ end }}</span
-        >
-        {{ range (.GetTerms "tags") }}
-        <a href="{{.Permalink}}" class="listItemCategory">{{.Name}}</a>
-        {{ end }}
+        {{ partial "authors" . }}
+        {{ partial "tags" . }}
       </div>
       <time>{{ dateFormat .Site.Params.myDateFormat .Date}}</time>
     </div>
