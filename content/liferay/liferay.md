@@ -5,7 +5,8 @@ draft = false
 description = ""
 image = "/images/liferay2.png"
 imageBig = "/images/5b.webp"
-categories = ["general", "liferay"]
+categories = ["liferay"]
+tags = ["liferay"]
 authors = ["Teja P"]
 avatar = "/images/avatar.jpg"
 +++

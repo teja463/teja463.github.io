@@ -5,7 +5,8 @@ draft = false
 description = ""
 image = "/images/database.png"
 imageBig = "/images/5b.webp"
-categories = ["general", "database"]
+categories = [ "database"]
+tags = [ "database","indexes"]
 authors = ["Teja P"]
 avatar = "/images/avatar.jpg"
 +++

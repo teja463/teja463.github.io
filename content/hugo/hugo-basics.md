@@ -5,7 +5,8 @@ draft = false
 description = ""
 image = "/images/hugo.png"
 imageBig = ""
-categories = ["general", "hugo"]
+categories = ["hugo"]
+tags = ["hugo", "static site"]
 authors = ["Teja P"]
 avatar = "/images/avatar.jpg"
 +++

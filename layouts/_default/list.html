@@ -15,7 +15,7 @@
                     <span>{{ dateFormat .Site.Params.myDateFormat .Date}}</span>
                 </div>
                 <div class="listItemCategories">
-                    {{ range (.GetTerms "categories") }}
+                    {{ range (.GetTerms "tags") }}
                         <a href={{.Permalink}} class="listItemCategory">{{.Name}}</a>
                     {{ end }}
                 </div>

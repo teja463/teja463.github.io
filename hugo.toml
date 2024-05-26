@@ -9,5 +9,6 @@ paginate = 5
     description = "Brahma Teja Ponnuru"
 
 [taxonomies]
+    tag = "tags"
     category = "categories"
     author = "authors"

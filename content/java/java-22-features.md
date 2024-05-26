@@ -5,7 +5,8 @@ draft = false
 description = ""
 image = "/images/java.png"
 imageBig = "/images/5b.webp"
-categories = ["general", "java"]
+categories = ["java"]
+tags = ["java", "jdk22"]
 authors = ["Teja P"]
 avatar = "/images/avatar.jpg"
 +++
