@@ -128,7 +128,12 @@ a{
 }
 
 pre{
-    padding: 16px;
+    overflow: auto;
+    padding: 4px 8px;
+    line-height: 24px;
+    font-size: 15px;
+    margin-bottom: 16px;
+    /* margin-top: 4px; */
 }
 
 .singleHeadTitle{
@@ -148,6 +153,7 @@ pre{
     width: 32px;
     height: 32px;
 }
+
 .singleContent a{
     text-decoration: underline;
 }
@@ -182,10 +188,6 @@ pre{
 .page-item.disabled{
     cursor: not-allowed;
     background-color: #313845;
-}
-
-pre{
-    overflow: auto;
 }
 
 .moon{
@@ -224,12 +226,17 @@ pre{
     background-color: var(--shade);
     padding: 2px 8px;
     border-radius: 4px;
+    font-size: 15px;
 }
 
 .singleContent .highlight code{
     background-color: unset;
     padding: 0;
     border-radius: 0;
+}
+
+.summary{
+    line-height: 24px;
 }
 
 @media (max-width: 768px) {
