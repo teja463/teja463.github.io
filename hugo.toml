@@ -5,7 +5,7 @@ title = 'Teja Ponnuru'
 paginate = 5
 
 [params]
-    myDateFormat = "Jan 2, 2006"
+    myDateFormat = "2 January 2006"
     description = "Brahma Teja Ponnuru"
 
 [taxonomies]

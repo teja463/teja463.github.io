@@ -1,6 +1,6 @@
 +++
 title = 'Indexes in database'
-date = 2024-05-19T15:31:05+05:30
+date = 2023-07-17T15:31:05+05:30
 draft = false
 description = ""
 image = "/images/database.png"

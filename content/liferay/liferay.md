@@ -1,6 +1,6 @@
 +++
 title = 'Users And Permissions in Liferay'
-date = 2024-05-19T15:31:05+05:30
+date = 2023-10-20T15:31:05+05:30
 draft = false
 description = ""
 image = "/images/liferay2.png"
