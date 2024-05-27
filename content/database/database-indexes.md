@@ -11,7 +11,7 @@ authors = ["Teja P"]
 avatar = "/images/avatar.jpg"
 +++
 
-# Indexes in database
+<!-- # Indexes in database -->
 
 * Indexes help to retrieve the data faster. It is because database does not have to scan the whole database to retrieve the data, normally this searching is done linearly i.e row by row, so if you are retrieving a 100th record it has to read all the 99 rows before that
 * If you create a index for the columns which you query frequently it will create a separate table for the key value pair where key is the column value and value is a pointer to that recrod

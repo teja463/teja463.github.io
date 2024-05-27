@@ -43,7 +43,7 @@ a{
     background-color: var(--bg);
     margin-bottom: 24px;
     padding: 10px;
-    box-shadow: 0 0 10px 4px var(--shade);
+    box-shadow: 0 0 10px 2px var(--shade);
 }
 
 .navbarInner{
@@ -209,6 +209,27 @@ pre{
     .sun{
         display: none;
     }
+}
+
+.continueReading{
+    background-color: var(--bgSoft);
+    width: 150px;
+    text-align: center;
+    padding: 10px 0;
+    color: var(--textSoft);
+    border-radius: 4px;
+}
+
+.singleContent code{
+    background-color: var(--shade);
+    padding: 2px 8px;
+    border-radius: 4px;
+}
+
+.singleContent .highlight code{
+    background-color: unset;
+    padding: 0;
+    border-radius: 0;
 }
 
 @media (max-width: 768px) {

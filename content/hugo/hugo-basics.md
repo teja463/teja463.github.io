@@ -12,7 +12,7 @@ avatar = "/images/avatar.jpg"
 +++
 
 	
-# Hugo Basics
+<!-- # Hugo Basics -->
 
 ## Create a site
 

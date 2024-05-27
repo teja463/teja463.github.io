@@ -12,7 +12,7 @@ avatar = "/images/avatar.jpg"
 +++
 
 
-# Regular Expressions in Python
+<!-- # Regular Expressions in Python -->
 
 
 * To use regular expressions in python you need to `import re` module

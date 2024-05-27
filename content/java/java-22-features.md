@@ -11,7 +11,7 @@ authors = ["Teja P"]
 avatar = "/images/avatar.jpg"
 +++
 
-# Java 22 Features
+<!-- # Java 22 Features -->
 
 ## Unamed variables
 
