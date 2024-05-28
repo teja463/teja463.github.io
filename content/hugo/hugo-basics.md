@@ -1,15 +1,14 @@
-+++
-title = 'Hugo Basics'
-date = 2024-05-22T22:27:58+05:30
-draft = false
-description = ""
-image = "/images/hugo.png"
-imageBig = ""
-categories = ["hugo"]
-tags = ["hugo", "static site"]
-authors = ["Teja P"]
-avatar = "/images/avatar.jpg"
-+++
+---
+title: 'Hugo Basics'
+date: 2024-05-22T22:27:58+05:30
+draft: false
+description: ""
+image: "/images/hugo.png"
+categories: ["hugo"]
+tags: ["hugo", "static site"]
+authors: ["Teja P"]
+avatar: "/images/avatar.jpg"
+---
 
 	
 <!-- # Hugo Basics -->
@@ -26,7 +25,7 @@ avatar = "/images/avatar.jpg"
 ## adding a theme
 
 * execute `git submodule add https://github.com/theNewDynamic/gohugo-theme-ananke.git themes/ananke` in bash inside your new site folder
-* edit hugo.toml and add this in new line `theme = "ananke"`
+* edit hugo.toml and add this in new line `theme: "ananke"`
 
 ## Adding content
 

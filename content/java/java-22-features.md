@@ -1,15 +1,14 @@
-+++
-title = 'Java 22 Features'
-date = 2024-05-19T15:31:05+05:30
-draft = false
-description = ""
-image = "/images/java.png"
-imageBig = "/images/5b.webp"
-categories = ["java"]
-tags = ["java", "jdk22"]
-authors = ["Teja P"]
-avatar = "/images/avatar.jpg"
-+++
+---
+title: 'Java 22 Features'
+date: 2024-05-19T15:31:05+05:30
+draft: false
+description: ""
+image: "/images/java.png"
+categories: ["java"]
+tags: ["java", "jdk22"]
+authors: ["Teja P"]
+avatar: "/images/avatar.jpg"
+---
 
 <!-- # Java 22 Features -->
 
@@ -19,7 +18,7 @@ avatar = "/images/avatar.jpg"
 * Earlier versions of java has few rules for variables like it should start with a letter, numbers not allowed as vairable names etc.
 * In java 22 you can use `_` as a variable name, but you can't do any operations on it Check example below
 ```java
-    Student _ = new Student();
+    Student _: new Student();
 ```
 * But you cant call any methods on that student object, for e.g you can't do like `_.getMarks()`
 * Then why this was introduced if we can't use the object to do anything.
@@ -37,7 +36,7 @@ avatar = "/images/avatar.jpg"
 
 ### In forEach loop
 ```java
-    List<Integer> numbers = List.of(1,2,3,4,5);
+    List<Integer> numbers: List.of(1,2,3,4,5);
     numbers.forEach(_ -> System.out.println("Hi"));
 ```
 
@@ -60,12 +59,12 @@ public class Employee{
 		return name;
 	}
 	public Employee(String name, Address address){
-		this.name = name;
-		this.address = address;
+		this.name: name;
+		this.address: address;
 	}
 	public static void main(String [] args){
-		Address address = new Address("Telangana", "India");
-		Employee emp = new Employee("Teja", address);
+		Address address: new Address("Telangana", "India");
+		Employee emp: new Employee("Teja", address);
 		System.out.println(emp.getName());
 		address.getAddress();
 	}

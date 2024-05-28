@@ -1,29 +1,29 @@
-+++
-title = 'Regular Expressions in Python'
-date = 2024-05-19T15:31:05+05:30
-draft = false
-description = ""
-image = "/images/python.png"
-imageBig = "/images/5b.webp"
-categories = ["python"]
-tags = ["python", "regex"]
-authors = ["Teja P"]
-avatar = "/images/avatar.jpg"
-+++
+---
+title: 'Regular Expressions in Python'
+date: 2024-05-19T15:31:05+05:30
+draft: false
+description: ""
+image: "/images/python.png"
+categories: ["python"]
+tags: ["python", "regex"]
+authors: ["Teja P"]
+avatar: "/images/avatar.jpg"
+---
 
 
 <!-- # Regular Expressions in Python -->
-
 
 * To use regular expressions in python you need to `import re` module
 * Regular expressions are used for pattern matching
 
 ## Simple Match
+
 * Searches for the given pattern in that string and return True or False
-* If you want to ignore case you can use re.I 
+* If you want to ignore case you can use re.I
+
 ```python
 # Simple matching
-string = input("Enter a String: ")
+string: input("Enter a String: ")
 
 if (re.search('Python', string)): # search for python in string
     print ("Python satisfied")
@@ -37,6 +37,7 @@ else:
 ```
 
 ## Anchors
+
 * `^` Represents starts with
 * `$` Represents ends with
 
@@ -56,12 +57,14 @@ if (re.search("^python$", string)): # Matches if input should be only the word p
 else:
     print ("^python$ not satisfied")
 ```
+
 ## Range of Characters
-* `[0-9]` => Matches single digit
-* `[a-z]` => Matches single lowercase alphabet
-* `[A-Z]` => Matches single uppercase alphabet
-* `[a-zA-Z]` => Matches any single alphabet
-* `[0-9a-zA-Z]` => Matches single alphanumeric
+
+* `[0-9]`:> Matches single digit
+* `[a-z]`:> Matches single lowercase alphabet
+* `[A-Z]`:> Matches single uppercase alphabet
+* `[a-zA-Z]`:> Matches any single alphabet
+* `[0-9a-zA-Z]`:> Matches single alphanumeric
 
 ```python
 if (re.search("[0-9][a-z][A-Z]", string)): # Matches string anywhere in the sentence which has a three letter word whoose first lette ris num , 2nd small char, 3rd caps char
@@ -76,9 +79,11 @@ else:
 ```
 
 ## Meta characters
+
 * `+` Matches one or more occurrences of the previous character
 * `*` Matches zero or more occurrences of the previous character
 * `?` Matches zero or one occurrence of the previous character
+
 ```python
   if (re.search("^ab+c$", string)): # between a nd c atleast one b should be present
     print ("^ab+c$ - satisfied")
@@ -97,6 +102,7 @@ else:
 ```
 
 ## Quantifiers
+
 * `{m}` Matches exactly 'm' occurrences of the previous character
 * `{m,n}` Matches minimum 'm' and maximum 'n' occurrences of the previous character
 
@@ -113,6 +119,7 @@ if (re.search("^ab{3}c$", string)): # only three b's should be present between a
 ```
 
 ## DOT Character
+
 * `.` Matches any single character
 
 ```python
@@ -128,7 +135,9 @@ else:
 ```
 
 ## Grouping
+
 * If you want to operate on a group of character you can enclose them in `()`
+
 ```python
 # Groupings
 if (re.search("^(ab){3}c$", string)): # valid for abababc
@@ -138,16 +147,18 @@ else:
 ```
 
 ## Character Range Escape Sequences
-* \d => [0-9] -> Matches single digit
-* \D => [^0-9] -> Matches single other than digit
-* \w => [0-9a-zA-Z_]
-* \W => [^0-9a-zA-Z_]
-* \s => Spaces and Tabs
-* \S => Other than Spaces and Tabs
+
+* \d:> [0-9] -> Matches single digit
+* \D:> [^0-9] -> Matches single other than digit
+* \w:> [0-9a-zA-Z_]
+* \W:> [^0-9a-zA-Z_]
+* \s:> Spaces and Tabs
+* \S:> Other than Spaces and Tabs
 
 ## Choices and Alternatives
-* [abc] => Matches any one of 'a', 'b' and 'c'
-* [^abc] => Matches other than 'a', 'b' and 'c'
+
+* `[abc]:>` Matches any one of 'a', 'b' and 'c'
+* `[^abc]:>` Matches other than 'a', 'b' and 'c'
 
 ```python
 if (re.search("^a[123]c$", string)):
@@ -162,6 +173,7 @@ else:
 ```
 
 ## Difference between search and match
+
 * Search looks for the pattern anywhere in the given string and matches it
 * Match looks for the pattern only at the begining of the string
 
@@ -178,28 +190,30 @@ else:
 ```
 
 ## Findall
+
 * Returns all the values that are matched with the pattern in the form of list
 
 ```python
-all_matched = re.findall("\d{3}", string)
+all_matched: re.findall("\d{3}", string)
 print (all_matched, '->', type(all_matched))
 
 ```
 
 ## Split
+
 * Splits the string based on that pattern
 * See `regex_demo.py` in the code repository detailed for examples
 
 ```python
-spt_str = re.split("\d{3}", string)
+spt_str: re.split("\d{3}", string)
 print (spt_str, '->', type(spt_str))
 ```
 
 ## Sub
+
 * Substitutes the pattern with the 555 in the given string
 
 ```python
-rep_str = re.sub("\d{3}", "555", string)
+rep_str: re.sub("\d{3}", "555", string)
 print (rep_str, '->', type(rep_str))
 ```
-

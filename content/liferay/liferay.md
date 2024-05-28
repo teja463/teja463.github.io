@@ -1,15 +1,14 @@
-+++
-title = 'Users And Permissions in Liferay'
-date = 2023-10-20T15:31:05+05:30
-draft = false
-description = ""
-image = "/images/liferay2.png"
-imageBig = "/images/5b.webp"
-categories = ["liferay"]
-tags = ["liferay"]
-authors = ["Teja P"]
-avatar = "/images/avatar.jpg"
-+++
+---
+title: 'Users And Permissions in Liferay'
+date: 2023-10-20T15:31:05+05:30
+draft: false
+description: ""
+image: "/images/liferay2.png"
+categories: ["liferay"]
+tags: ["liferay"]
+authors: ["Teja P"]
+avatar: "/images/avatar.jpg"
+---
 
 <!-- # Users And Permissions -->
 

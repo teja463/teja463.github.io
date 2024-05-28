@@ -1,15 +1,14 @@
-+++
-title = 'Indexes in database'
-date = 2023-07-17T15:31:05+05:30
-draft = false
-description = ""
-image = "/images/database.png"
-imageBig = "/images/5b.webp"
-categories = [ "database"]
-tags = [ "database","indexes"]
-authors = ["Teja P"]
-avatar = "/images/avatar.jpg"
-+++
+---
+title: 'Indexes in database'
+date: 2023-07-17T15:31:05+05:30
+draft: false
+description: ""
+image: "/images/database.png"
+categories: [ "database"]
+tags: [ "database","indexes"]
+authors: ["Teja P"]
+avatar: "/images/avatar.jpg"
+---
 
 <!-- # Indexes in database -->
 
@@ -18,9 +17,11 @@ avatar = "/images/avatar.jpg"
 * Now database does not have to scan all the rows it can just read that pointer and go to that record
 
 ## Clustered Index
+
 A clustered index is an index that specifies the physical arrangement of a database's table records. There can only be one clustered index per table since there can only be one method that records are physically maintained in a database table. It stores the records in sorted order.
 
 ## Non-Clustered Index
+
 A non-clustered index is an index that doesn't specify the physical arrangement of the records maintained in the database’s table. The Non-Clustered Indexes are stored in a different table. Therefore, as they are maintained in a different table, there can be numerous non-clustered indexes that can be created for a single table.
 
 [Cluster vs Non Cluster Index](https://www.scaler.com/topics/clustered-and-non-clustered-index/)
