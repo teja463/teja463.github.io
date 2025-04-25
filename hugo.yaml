@@ -2,7 +2,7 @@ baseURL: https://teja463.github.io/
 languageCode: en-us
 title: Teja Ponnuru
 
-paginate: 5
+paginate: 10
 
 enableEmoji: true
 
