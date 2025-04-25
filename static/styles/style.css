@@ -1,15 +1,15 @@
 :root{
-    --bg: #000000;
+    --bg: #ffffff;
     --bgSoft: #7856ff;
-    --text: #e7e9ea;
+    --text: #000000;
     --textSoft: #ffffff;
-    --shade: rgba(255,255,255,0.3);
+    --shade: rgba(0,0,0,0.3)
 }
 
-body.light{
-    --bg: #ffffff;
-    --text: #000000;
-    --shade: rgba(0,0,0,0.3)
+body.dark{
+    --bg: #000000;
+    --text: #e7e9ea;
+    --shade: rgba(255,255,255,0.3);
 }
 
 *{
@@ -189,7 +189,7 @@ pre{
     background-color: #313845;
 }
 
-.moon{
+.sun{
     display: none;
 }
 
@@ -203,12 +203,12 @@ pre{
     height: 24px;
 }
 
-.light{
+.dark{
     .moon{
-        display: block;
+        display: none;
     }
     .sun{
-        display: none;
+        display: block;
     }
 }
 
