@@ -1,4 +1,4 @@
-const mode = localStorage.getItem("mode") || "";
+const mode = localStorage.getItem("mode") || "light";
 const themeToggle = document.querySelector(".themeToggle");
 const body = document.querySelector("body");
 
