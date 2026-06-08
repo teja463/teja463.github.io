@@ -10,3 +10,4 @@
 - Execute `hugo` it creates the public folder which can be copied to any web server
 
 > This project is set up with Github actions, whenever you commit the code to master branch, it triggers the Github actions which takes care of building and deploying.
+
