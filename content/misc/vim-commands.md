@@ -42,6 +42,15 @@ avatar: "/images/avatar.jpg"
 | `10j`   | Move down 10 lines |
 | `10k`   | Move up 10 lines   |
 
+## Screen Navigation
+
+| Command    | Description                   |
+| ---------- | ----------------------------- |
+| `Ctrl + f` | Move the screen down one page |
+| `Ctrl + b` | Move the screen up one page   |
+| `Ctrl + e` | Move the screen down one line |
+| `Ctrl + y` | Move the screen up one line   |
+| `Ctrl + g` | Display file status           |
 
 ## Insert Mode
 
@@ -108,172 +117,10 @@ avatar: "/images/avatar.jpg"
 
 > `p` and `P` can paste text that was deleted or yanked.
 
+## Operators + Motions
 
-## Matching Parentheses
-
-| Command | Description                                                                                    |
-| ------- | ---------------------------------------------------------------------------------------------- |
-| `%`     | Jump to the matching parenthesis/bracket when the cursor is on `(`, `)`, `[`, `]`, `{`, or `}` |
-
-
-## Screen Navigation
-
-| Command    | Description                   |
-| ---------- | ----------------------------- |
-| `Ctrl + f` | Move the screen down one page |
-| `Ctrl + b` | Move the screen up one page   |
-| `Ctrl + e` | Move the screen down one line |
-| `Ctrl + y` | Move the screen up one line   |
-| `Ctrl + g` | Display file status           |
-
-
-# Vim Commands (`:`)
-
-## Execute Shell Commands
-
-```vim
-:!ls
-```
-
-Execute a shell command from Vim.
-
-For example:
-
-```vim
-:!ls
-```
-
-runs the `ls` command.
-
-
-## Save / Write Files
-
-```vim
-:w FILE
-```
-
-Write the current file to a different filename.
-
-### Save Selected Lines
-
-1. Press `v` to enter Visual mode.
-2. Select the lines you want.
-3. Run:
-
-```vim
-:w filename
-```
-
-This saves only the selected lines to the specified file.
-
-
-## Read / Retrieve Files
-
-```vim
-:r FILE
-```
-
-Read the contents of another file into the current file.
-
-You can also execute a command and insert its output:
-
-```vim
-:r !ls
-```
-
-This executes `ls` and inserts its output into the current Vim buffer.
-
-
-# Search and Replace
-
-## Replace in the Current Line
-
-```vim
-:s/old/new/g
-```
-
-Replace all occurrences of `old` with `new` in the current line.
-
-## Replace in a Range of Lines
-
-```vim
-:1,20s/old/new/g
-```
-
-Replace all occurrences of `old` with `new` from lines 1 through 20.
-
-## Replace Throughout the File
-
-```vim
-:%s/old/new/g
-```
-
-Replace all occurrences of `old` with `new` in the entire file.
-
-## Replace with Confirmation
-
-```vim
-:%s/old/new/gc
-```
-
-Replace all occurrences in the file while asking for confirmation for each replacement.
-
----
-
-# Help
-
-```vim
-:help
-```
-
-Enter Vim's help system.
-
-To get help for a specific command:
-
-```vim
-:help r
-```
-
-This opens help related to the `r` command.
-
-
-## Switching Between Help and the Main File
-
-```text
-Ctrl + w, w
-```
-
-Switch between the help window and the main file window.
-
-To close the help window:
-
-```vim
-:q
-```
-
-
-# Operators + Motions
-
-One of Vim's most powerful concepts is combining an **operator** with a **motion**.
-
-The general pattern is:
-
-```text
-[operator] [motion]
-```
-
-For example:
-
-```vim
-d2w
-```
-
-means:
-
-* `d` → delete
-* `2w` → move forward 2 words
-
-Therefore, `d2w` means **delete 2 words**.
+> One of Vim's most powerful concepts is combining an **operator** with a **motion**.
+> The general pattern is: [operator] [motion]. For example `d2w` means **delete 2 words**.
 
 ### Common Operators
 
@@ -296,9 +143,7 @@ c2w
 c$
 cc
 ```
-
-
-# Numbers + Motions
+## Numbers + Motions
 
 Numbers can be combined with motions to repeat them.
 
@@ -310,25 +155,55 @@ Numbers can be combined with motions to repeat them.
 | `10k`   | Move up 10 lines      |
 | `35G`   | Go to line 35         |
 
-The general pattern is:
+> The general pattern is: [number] [motion]. For example `10j` means **move down 10 lines**.
 
-```text
-[number] [motion]
-```
+## Matching Parentheses
 
-For example:
+| Command | Description                                                                                    |
+| ------- | ---------------------------------------------------------------------------------------------- |
+| `%`     | Jump to the matching parenthesis/bracket when the cursor is on `(`, `)`, `[`, `]`, `{`, or `}` |
 
-```vim
-10j
-```
 
-means **move down 10 lines**.
 
-Similarly:
 
-```vim
-2w
-```
 
-means **move forward 2 words**.
+## Execute Shell Commands from VIM
+
+For example: `:!ls`
+runs the `ls` command.
+
+## Save / Write Files
+
+Command `:w FILE`
+Write the current file to a different filename.
+
+### Save Selected Lines
+
+1. Press `v` to enter Visual mode.
+2. Select the lines you want.
+3. Run: `:w filename`
+4. This saves only the selected lines to the specified file.
+
+## Read / Retrieve Files
+1. `:r FILE` Read the contents of another file into the current file.
+2. `:r !ls` You can also execute a command and insert its output:
+3. This executes `ls` and inserts its output into the current Vim buffer.
+
+## Search and Replace
+
+1. `:s/old/new/g` Replace all occurrences of `old` with `new` in the current line.
+2. `:1,20s/old/new/g` Replace all occurrences of `old` with `new` from lines 1 through 20.
+3. `:%s/old/new/g` Replace all occurrences of `old` with `new` in the entire file.
+4. `:%s/old/new/gc` Replace all occurrences in the file while asking for confirmation for each replacement.
+
+##  Help
+
+1. `:help` Enter Vim's help system.
+2. `:help r` To get help for a specific command. This opens help related to the `r` command.
+## Switching Between Help and the Main File
+
+1. `Ctrl + w, w` Switch between the help window and the main file window.
+2. `:q` To close the help window:
+
+
 
